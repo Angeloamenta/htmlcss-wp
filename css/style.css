@@ -15,19 +15,15 @@ html {
     clear: both;
 }
 
+
 /* layout */
 .container {
     width: 70%;
     margin: 20px auto;
-    height: 500px;
+    
 }
 
 /* header */
-
-header {
-    /* height: 100px;
-    background-color: #E579E6; */
-}
 
 .logo {
     width: 200px;
@@ -50,46 +46,38 @@ nav a {
 
 main, 
 main section {
-    margin-top: 15px;
+    margin-top: 25px;
 }
 
-.jambotron::before {
-    background-color: rgba(50,0,0,0.25);
-}
+
 
 .jambotron {
     width: 100%;
     /* height: 683px; */
     height: 500px;
-    /* background-image: url(../img/banner.jpg); */
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)),
-    url('../img/banner.jpg');
+    /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)),
+    url('../img/banner.jpg'); */
+    background-image: url(../img/banner.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 10px;
     
 }
 
+
 .jambo-title {
     display: inline-block;
     color: white;
-    width: 550px;
-    height: 200px;
-    margin-top: 300px;
-    margin-left: 50px;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    padding-top: 350px;
+    padding-left: 80px;
+    padding-right: 400px;
+    overflow: auto;
 }
 
 /* float */
-.sect-blue {
-    width: 100%;
-    /* height: 400px; */
-    /* background-color:#0086FF; */
-}
-
-.line{
-    /* height: 80px; */
-    /* background-color: #ABCFE7; */
-}
 
 .line-title {
     font-size: 2em;
@@ -99,9 +87,8 @@ main section {
     color: gray;
 }
 
-.sect-blue div[class*="column"]{
+.sect-central div[class*="column"]{
     height: calc(100% - 100px);
-    /* background-color: #ABCFE7; */
     float: left;
     margin-top: 10px;
 }
@@ -114,12 +101,19 @@ main section {
     
 }
 
-.pianta {
-    object-fit: cover;
-    width: 100;
+.plant-container {
+    display: inline-block;
+    width: 100%;
     height: 250px;
-    padding: 10px;
+    background-color: black;
     border-radius: 20px;
+}
+
+.plant {
+    object-fit: cover;
+    opacity: 80%;
+    width: 100%;
+    height: 250px;
 }
 
 .column-center {
@@ -127,20 +121,36 @@ main section {
     margin: 0 10px;
 }
 
-.banner2{
-    object-fit: cover;
-    height: 250px;
+.banner2-container{
+    display: inline-block;
     width: 100%;
-    padding: 10px;
+    height: 250px;
+    background-color: black;
+    border-radius: 20px;
+}
+
+.banner2{
+    opacity: 80%;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+
+.people-contain {
+    display: inline-block;
+    width: 100%;
+    height: 250px;
+    background-color: black;
     border-radius: 20px;
 }
 
 .people {
     object-fit: cover;
+    opacity: 80%;
     width: 100%;
-    height: 250px;
-    padding: 10px;
-    border-radius: 20px;
+    height: 100%;
+    
 }
 
 /* footer */
@@ -148,12 +158,14 @@ footer {
     text-align: center;
     margin-top: 30px;
     width: 100%;
-    /* height: 60px;
-    background-color: #8801FE; */
 }
 
 .made::after{
     content: "\02764";
     color: red;
     margin-left: 5px;
+}
+
+h4{
+    margin-top: 10px;
 }
