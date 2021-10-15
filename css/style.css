@@ -53,16 +53,31 @@ main section {
     margin-top: 15px;
 }
 
+.jambotron::before {
+    background-color: rgba(50,0,0,0.25);
+}
+
 .jambotron {
     width: 100%;
     /* height: 683px; */
     height: 500px;
-    background-image: url(../img/banner.jpg);
+    /* background-image: url(../img/banner.jpg); */
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)),
+    url('../img/banner.jpg');
     background-size: cover;
     background-position: center;
     border-radius: 10px;
+    
 }
 
+.jambo-title {
+    display: inline-block;
+    color: white;
+    width: 550px;
+    height: 200px;
+    margin-top: 300px;
+    margin-left: 50px;
+}
 
 /* float */
 .sect-blue {
