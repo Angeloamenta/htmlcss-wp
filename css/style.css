@@ -87,8 +87,16 @@ main section {
 }
 
 .line{
-    height: 80px;
+    /* height: 80px; */
     background-color: #ABCFE7;
+}
+
+.line-title {
+    font-size: 2em;
+}
+
+.sottotitolo {
+    color: gray;
 }
 
 .sect-blue div[class*="column"]{
