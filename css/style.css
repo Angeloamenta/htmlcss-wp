@@ -35,6 +35,11 @@ nav {
     margin-top: 30px;
 }
 
+.nav-list li {
+    list-style: none;
+    display: inline;
+}
+
 nav a {
     text-decoration: none;
     color: #8D8D8D;
