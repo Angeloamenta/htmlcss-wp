@@ -24,10 +24,25 @@ html {
 /* header */
 
 header {
-    height: 100px;
-    background-color: #E579E6;
+    /* height: 100px;
+    background-color: #E579E6; */
 }
 
+.logo {
+    width: 200px;
+    padding-right: 20px;
+    border-right: 1px solid gray;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #8D8D8D;
+    margin-right: 10px;
+}
 
 /* main */
 
